@@ -17,7 +17,7 @@ h1{
  }
 
 body {
-    background-image: url("..img/saab.jpg")
+    background-image: url("img/saab.jpg");
 
 }ul { list-style: square;
  }a {
@@ -25,4 +25,5 @@ body {
       text-decoration: none;
       border-bottom: 1px solid green;
   }
+
 
