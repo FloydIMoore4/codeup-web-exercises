@@ -2,17 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Veridian Dynamics: Register with Us</title>
 </head>
 <body>
-    <h1>Register With Us</h1>
+    <h1>Register With Us!</h1>
 
-    <form action="https://requestb.in/xcwuybxc">
+    <form method="post" action="https://requestb.in/1jmg1we1">
+
         <label for="email">
             Email:
             <br>
-            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            <input type="text" id="email" name="email" placeholder="Enter your email address" required>
         </label>
-        <br>
+
 
         <label for="password">
             Password:
@@ -20,37 +22,53 @@
             <input type="password" id="password" name="password" placeholder="Enter your Password" required>
         </label>
         <br>
-
-        <button submit="login">Login</button>
         <br>
-        <br>
-
+        <label for="bio">Bio</label>
         <textarea name="bio" id="bio" cols="60" rows="10" placeholder="Short description about yourself"></textarea>
         <br>
 
     </form>
+    <fieldset>
+    <form
         <h1>How did you hear about us?</h1>
-        <form>
+
             <label for="billboard">
                 Billboard
 
                 <input type="radio" id="billboard" name="choice">
             </label>
-            <label for="commercial">
+            <label for="Internet">
                 Commercial
 
-                <input type="radio" id="commercial" name="choice">
+                <input type="radio" id="Internet" name="choice">
             </label>
-            <label  for="youtube">
+            <label  for="radio">
                 Youtube
 
-                <input type="radio" id="youtube" name="choice">
+                <input type="radio" id="Radio" name="choice">
+            </label>
+            <label for="other">
+                Other:
+
+                <input type="radio" id="Other" name="choice">
             </label>
             <br>
-            <button submit="login">Submit</button>
+
+    </fieldset>
+    <div>
+
+        <label for="browser">What browser are you using?</label>
+        <select name="browsere" id="browser">
+
+            <option value="chrome">chrome</option>
+            <option value="safari">safari</option>
+            <option value="firefox">firefox</option>
+        </select>
+    </div>
+<button submit="Submit">Submit</button>
+
 
 
         </form>
-
 </body>
 </html>
