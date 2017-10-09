@@ -1,29 +1,41 @@
+body {
+    font-style: oblique;
+    background-image: url("../img/parchment.jpeg");
+}
+
 h1{
     text-align: center
 }
 
 .fancy-header {
-    color: purple;
+    color: darkblue;
     text-decoration: underline;
 }
- h2 {color: orange;
+ h2 {
+     color: darkgreen;
      text-decoration: underline;
 
 }
- body {
-     background-color: powderblue;
-     font-family: Al Nile;
 
+
+table, th, td
+{border: 1px solid black;
+}
+
+
+
+
+ul {
+    list-style-type: square;
  }
-
-body {
-    background-image: url("img/saab.jpg");
-
-}ul { list-style: square;
- }a {
-      color: red;
+a {
+      color: darkslateblue;
       text-decoration: none;
-      border-bottom: 1px solid green;
+      border-bottom: 1px #ff4b82;
+
   }
+a:hover{
+    background-color:antiquewhite; s
+}
 
 
