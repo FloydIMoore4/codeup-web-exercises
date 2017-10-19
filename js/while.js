@@ -28,7 +28,7 @@ if (totalCones >= soldCones) {
             console.log("Yay, I sold them all!!");
         }
 } else if (totalCones < soldCones){
-    console.log("cannot sell you" + soldCones + " I only have"+ totalCones);
+    console.log("cannot sell you " + soldCones + " I only have "+ totalCones);
 
 }else {
     console.log("error")
