@@ -58,7 +58,20 @@ turnBlue.addEventListener("click", subHeadToBlue);
 //
 //// TODO: Set text color on every other list item to grey
 //// TODO: Set text color of li with dbid = 1 to blue
-var changeOddTogrey = document.getElementsByTagName("")
+var changeOddTOGrey = document.getElementById('changeOddTOGrey');
+function changeList() {
+            var listItems = document.getElementsByTagName("li");
+            for(var i = 0; i < listItems.length; i++) {
+                       if(i % 2 === 0) {
+                               listItems[i].style.color = "grey";
+                           }
+                      if(listItems[i].getAttribute("data-dbid") === "1") {
+                          listItems[i].style.color = "blue";
+                      }}
+
+changeOddTOGrey.addEventListener("click", change);
+
+
 //for (var i = 0; i < listItems.length; i++) {
 //    if (i % 2 === 0){
 //        listItems[i].style.color = "grey";
