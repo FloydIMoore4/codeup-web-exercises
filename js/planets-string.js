@@ -31,4 +31,15 @@
     var planetsString = planetsArray.join("<br>");
     console.log(planetsString);
 
+
+    var planetsListHTML = "<u><li>";
+    var innerPlanetHTML = planetsArray.join("<u><li>");
+
+    console.log(planetsListHTML + innerPlanetHTML);
+
+
+
+
+
+
 })();
