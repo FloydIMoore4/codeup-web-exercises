@@ -44,17 +44,38 @@
 
 
 // Add the marker to our existing map
+        var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Fargos</h1>'+
+            '<div id="bodyContent">'+
+            '<p>The difference between <b>Fargos Pizza Company</b> is practically everything! ' +
+            'From our glittering Victorian Architecture to our genuine player piano, '+
+            'we are likely the most unique family dining establishment you have ever seen!  '+
+            'But looks aren\'t everything --- so we offer a choice of twenty-five great pizzas, '+
+            'our special pastas, sandwiches and even a salad bar . . . so YOU can make the salad YOU have been waiting for! '+
+            'Compliment your dinner choice with a beverage from our fountain. Then top it off with one of our dessert favorites!  '+
+            'The atmosphere is casual, so come as you are, and bring the whole family! We have a Game Room and specialties for Kids. '+
+            '</p>'+
+
+            '</div>'+
+            '</div>';
+        var image =
         var marker = new google.maps.Marker({
+            animation: google.maps.Animation.DROP,
             position: fargos,
             map: map
         });
         // Create a new infoWindow object with content
         var infowindow = new google.maps.InfoWindow({
-            content: "Fargo's has magic mirrors!"
+            content: contentString
         });
 
 // Open the window using our map and marker
-        infowindow.open(map, marker);
+        marker.addListener('click', function() {
+            infowindow.open(map, marker);
+        });
+
 
 // Set our address to geocode
 //        var address = "300 Alamo Plaza, San Antonio, TX, 78205";
@@ -77,5 +98,5 @@
             }
         });
     })();
-</script>
+    <img src="img/pizza.png"/></script>
 </body>
